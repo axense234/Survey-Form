@@ -30,7 +30,7 @@ git clone https://github.com/axense234/Survey-Form.git
 
 - 0.2
   - Made the website look better,also made it more scalable
-  - See [commit change]https://github.com/axense234/Survey-Form/commits/master) or See [release history](https://github.com/axense234/Survey-Form/releases)
+  - See [commit change](https://github.com/axense234/Survey-Form/commits/master) or See [release history](https://github.com/axense234/Survey-Form/releases)
 - 0.1
   - Initial Release
 

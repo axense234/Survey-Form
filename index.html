@@ -1,88 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Your Favorite Fruits</title>
-</head>
-<body>
-    <h1 id="title">Your Favorite Fruits</h1>
-    <div>
-        <p class="survey-title"></p>
-        <ul>
-            <li>
-                <p>1.What are your favorite fruits?</p>
-                <input type="checkbox" name="1.1" id="1.1"><span>Apple</span>
-                <input type="checkbox" name="1.2" id="1.2"><span>Orange</span>
-                <input type="checkbox" name="1.3" id="1.3"><span>Banana</span>
-                <input type="checkbox" name="1.4" id="1.4"><span>Blueberrie</span>
-                <input type="checkbox" name="1.5" id="1.5"><span>Watermelon</span>
-                <span><button type="submit">Submit</button></span>
-            </li>
-            <li>
-                <p>2.Why are those your favorite fruits?</p>
-                <input type="text" name="2" id="2">
-                <span><button type="submit">Submit</button></span>
-            </li>
-            <li>
-                <p>3.How often do you eat those fruits?</p>
-                <input type="range" name="3" id="3">
-                <span><button type="submit">Submit</button></span>
-                <p id="howoften">Every month - Every Week - Every Day</p>
-            </li>
-            <li id="bigasf">
-                <p>4.If you had to choose one fruit to eat only,which one will it be?</p>
-                <input type="radio" name="4.1" id="4.1"><span>Apple</span>
-                <input type="radio" name="4.2" id="4.2"><span>Orange</span>
-                <input type="radio" name="4.3" id="4.3"><span>Banana</span>
-                <input type="radio" name="4.4" id="4.4"><span>Blueberrie</span>
-                <input type="radio" name="4.5" id="4.5"><span>Watermelon</span>
-                <span><button type="submit">Submit</button></span>
-            </li>
-            <li>
-                <p>5.When is the last item you ate a fruit?</p>
-                <input type="date">
-                <span><button type="submit">Submit</button></span>
-            </li>
-            <li>
-                <p>6.Did this survey make you want to eat a <strong>juicy</strong> fruit?</p> 
-                <input type="checkbox"><span>Yes</span>
-                <input type="checkbox"><span>No</span>
-                <input type="checkbox"><span>Yes and No</span>
-                <span><button type="submit">Submit</button></span>
-            </li>
-            <li>
-                <p>
-                    Please enter your email:
-                    <span><input type="email"></span>
-                    <span><button type="submit">Submit</button></span>
-                 </p>
-            </li>
-            <li>
-                <p>
-                    Please enter your name:
-                    <span><input type="email"></span>
-                    <span><button type="submit">Submit</button></span>
-                 </p>
-    
-            </li>
-            <li>
-                <p>
-                    Please enter your password:
-                    <input type="password"> 
-                    <span><button type="submit">Submit</button></span>
-
-                 </p>
-            </li>
-            <li id="bigasf2">
-                <p >
-                    Rate your experience(any number,the higher the better):
-                    <input type="number">
-                </p>
-            </li>
-        </ul>
-    </div>
-</body>
+  </head>
+  <body>
+    <h1 class="title">Your Favorite Fruits</h1>
+    <form>
+      <ul>
+        <li>
+          <h2>1.What are your favorite foods?</h2>
+          <div class="form-control">
+            <input type="checkbox" name="apples" id="apples" value="apples" />
+            <label for="apples">Apples</label>
+          </div>
+          <div class="form-control">
+            <input
+              type="checkbox"
+              name="watermelons"
+              id="watermelons"
+              value="watermelons"
+            />
+            <label for="watermelons">Watermelons</label>
+          </div>
+          <div class="form-control">
+            <input
+              type="checkbox"
+              name="pineapples"
+              id="pineapples"
+              value="pineapples"
+            />
+            <label for="pineapples">Pineapples</label>
+          </div>
+          <div class="form-control">
+            <input type="checkbox" name="mangos" id="mangos" value="mangos" />
+            <label for="mangos">Mangos</label>
+          </div>
+          <div class="form-control">
+            <input
+              type="checkbox"
+              name="bananas"
+              id="bananas"
+              value="bananas"
+            />
+            <label for="bananas">Bananas</label>
+          </div>
+        </li>
+        <li>
+          <label for="why-favorite-foods">
+            <h2>2.Why are those your favorite foods?</h2>
+          </label>
+          <input
+            type="text"
+            name="why-favorite-foods"
+            id="why-favorite-foods"
+          />
+        </li>
+        <li>
+          <h2>3.How often do you eat those fruits?</h2>
+          <div class="form-control">
+            <input type="range" name="how-often" id="how-often" />
+            <label for="how-often">Every month - Every Week - Every Day</label>
+          </div>
+        </li>
+        <li>
+          <h2>
+            4.If you had to choose one fruit to eat only,which one will it be?
+          </h2>
+          <div class="form-control">
+            <input type="radio" name="favorite-food" id="apple" value="apple" />
+            <label for="apple">Apple</label>
+          </div>
+          <div class="form-control">
+            <input
+              type="radio"
+              name="favorite-food"
+              id="watermelon"
+              value="watermelon"
+            />
+            <label for="watermelon">Watermelon</label>
+          </div>
+          <div class="form-control">
+            <input
+              type="radio"
+              name="favorite-food"
+              id="pineapple"
+              value="pineapple"
+            />
+            <label for="pineapple">Pineapple</label>
+          </div>
+          <div class="form-control">
+            <input type="radio" name="favorite-food" id="mango" value="mango" />
+            <label for="mango">Mango</label>
+          </div>
+          <div class="form-control">
+            <input
+              type="radio"
+              name="favorite-food"
+              id="watermelon"
+              value="watermelon"
+            />
+            <label for="watermelon">Watermelon</label>
+          </div>
+        </li>
+        <li>
+          <label for="last-time-ate-fruit"
+            ><h2>5.When was the last time you ate a fruit?</h2></label
+          >
+          <input
+            type="date"
+            id="last-time-ate-fruit"
+            name="last-time-ate-fruit"
+          />
+        </li>
+        <li>
+          <h2>6.Did this survey make you want to eat a juicy fruit?</h2>
+          <div class="form-control">
+            <input type="radio" id="yes" name="desire" value="yes" />
+            <label for="yes">Yes</label>
+          </div>
+          <div class="form-control">
+            <input type="radio" id="no" name="desire" value="no" />
+            <label for="no">No</label>
+          </div>
+          <div class="form-control">
+            <input
+              type="radio"
+              id="yes-and-no"
+              name="desire"
+              value="yes-and-no"
+            />
+            <label for="yes-and-no">Yes and No</label>
+          </div>
+        </li>
+        <h2 class="title">Submit your form!</h2>
+        <li>
+          <div class="form-control">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ex: test@gmail.com"
+              required
+            />
+          </div>
+        </li>
+        <li>
+          <div class="form-control">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="ex: Username"
+            />
+          </div>
+        </li>
+        <li>
+          <div class="form-control">
+            <label for="experience"
+              >Rate your experience out of 10!(the higher the better)</label
+            >
+            <input
+              type="number"
+              name="experience"
+              id="experience"
+              max="10"
+              placeholder="ex: 5"
+            />
+          </div>
+        </li>
+      </ul>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
